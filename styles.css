@@ -287,22 +287,6 @@ body {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .hero-container {
-    gap: 40px;
-    padding: 0 20px;
-  }
-
-  .nhie-screen {
-    width: 280px;
-    height: 560px;
-  }
-
-  .headline {
-    font-size: 42px;
-  }
-}
-
-@media (max-width: 1024px) {
   .hero {
     padding: 50px 15px;
     min-height: 100vh;
@@ -384,7 +368,16 @@ body {
   }
 
   .semi-circle {
-    display: none;
+    position: absolute;
+    left: 50%;
+    bottom: -35%;
+    top: auto;
+    transform: translateX(-50%);
+    width: 1000px;
+    height: 80%;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
   }
 
   /* Modal improvements for mobile */
@@ -409,101 +402,25 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .hero {
-    padding: 10px;
-  }
-
-  .hero-container {
-    gap: 25px;
-  }
-
-  .nhie-screen {
-    width: 200px;
-    height: 400px;
-  }
-
-  .headline {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .description {
-    font-size: 15px;
-    line-height: 1.5;
+@media (max-width: 550px) {
+  .email-input {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   .email-field {
-    padding: 16px 18px;
-  }
-
-  .join-btn {
-    padding: 16px 20px;
-    font-size: 15px;
-  }
-
-  .modal {
-    padding: 25px 15px;
-    margin: 15px;
-  }
-
-  .modal h2 {
-    font-size: 20px;
-  }
-
-  .modal p {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 360px) {
-  .headline {
-    font-size: 24px;
-  }
-
-  .description {
-    font-size: 14px;
-  }
-
-  .nhie-screen {
-    width: 180px;
-    height: 360px;
-  }
-
-  .email-field {
-    padding: 14px 16px;
+    width: 100%;
+    max-width: 300px;
+    padding: 15px 20px;
     font-size: 16px;
   }
 
   .join-btn {
-    padding: 14px 18px;
+    padding: 15px 25px;
     font-size: 14px;
-  }
-}
-
-/* Landscape orientation adjustments for mobile */
-@media (max-height: 600px) and (orientation: landscape) {
-  .hero {
-    min-height: 100vh;
-    padding: 10px;
-  }
-
-  .hero-container {
-    gap: 20px;
-  }
-
-  .nhie-screen {
-    width: 180px;
-    height: 360px;
-  }
-
-  .headline {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-
-  .description {
-    font-size: 14px;
-    margin-bottom: 20px;
+    min-height: auto;
   }
 }
