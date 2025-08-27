@@ -2,6 +2,24 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Lume landing page loaded successfully!");
 
+  // Image carousel functionality
+  const carouselImages = document.querySelectorAll(".carousel-image");
+  let currentImageIndex = 0;
+
+  function cycleImages() {
+    // Remove active class from current image
+    carouselImages[currentImageIndex].classList.remove("active");
+
+    // Move to next image
+    currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+
+    // Add active class to new image
+    carouselImages[currentImageIndex].classList.add("active");
+  }
+
+  // Start the carousel cycle (3 seconds per image)
+  setInterval(cycleImages, 3000);
+
   // Email input and join button functionality
   const emailField = document.querySelector(".email-field");
   const joinBtn = document.querySelector(".join-btn");
