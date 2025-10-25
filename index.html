@@ -91,40 +91,45 @@
           </h1>
 
           <p class="description">
-            We're building a dating app where you play games to get to know your
-            matches. Look through profiles from other UT students, send a game
-            request instead of a swipe, and see who you actually click with!
+            We built an app where you play games to get to know your matches.
+            Look through profiles from other UT students, send a game request
+            instead of a swipe, and play games like
+            <i class="game-name">Never Have I Ever</i> and
+            <i class="game-name">Hot Takes</i>!
           </p>
 
-          <div class="cta-section">
-            <div class="email-input">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                class="email-field"
+          <div class="download-section">
+            <a
+              href="https://linkly.link/2GuzE"
+              target="_blank"
+              class="download-btn"
+            >
+              <img
+                src="assets/images/Apple Logo.png"
+                alt="Apple Logo"
+                class="apple-logo"
               />
-              <button class="join-btn">
-                <span class="btn-text">JOIN THE UT BETA 🤘</span>
-              </button>
-            </div>
-            <p class="waitlist-text">
-              Curious at all? Join <strong>126</strong> students on the waitlist
-              for early access! No obligation.
-            </p>
+              <div class="download-text">
+                <span class="download-label">Download on the</span>
+                <span class="store-name">App Store</span>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Modal for successful beta signup -->
-    <div class="modal-overlay" id="successModal">
+    <!-- QR Code Modal for Desktop -->
+    <div class="modal-overlay" id="qrModal">
       <div class="modal">
-        <h2>Welcome to the Beta! 🎉</h2>
-        <p>
-          You've been successfully added to the UT Beta. We'll be in touch soon
-          with updates and early access!
-        </p>
-        <button class="modal-btn" onclick="closeModal()">Got it!</button>
+        <h2>Scan to download Lume!</h2>
+        <div class="qr-code-container">
+          <img
+            src="assets/images/Lume App Store QR Code.png"
+            alt="Lume App Store QR Code"
+            class="qr-code"
+          />
+        </div>
       </div>
     </div>
 
