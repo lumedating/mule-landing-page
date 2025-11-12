@@ -31,7 +31,7 @@ body {
 /* Hero Section */
 .hero {
   min-height: 100vh;
-  background: linear-gradient(180deg, #3040d0 0%, #b700ff 100%);
+  background: linear-gradient(180deg, #8800be 0%, #c739ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +48,7 @@ body {
   transform: translateY(-50%);
   width: 65%;
   height: 200%;
-  background: white;
+  background: #111111;
   border-radius: 0 50% 50% 0;
   z-index: 1;
 }
@@ -79,7 +79,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 6px solid black;
+  border: 4px solid white;
   border-radius: 35px;
   object-fit: cover;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -121,18 +121,14 @@ body {
   line-height: 1.2;
   margin-bottom: 30px;
   color: white;
-  font-family: "DM Sans", sans-serif;
-}
-
-.headline em {
-  font-style: italic;
-  font-weight: 400;
+  font-family: "Bowlby One", sans-serif;
+  font-style: normal;
 }
 
 .fun-exciting {
-  font-family: "IBM Plex Serif", serif;
-  font-style: italic;
-  font-weight: 700;
+  font-family: "Bowlby One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .description {
@@ -256,9 +252,9 @@ body {
   font-size: 24px;
   margin-bottom: 15px;
   color: #3040d0;
-  font-family: "IBM Plex Serif", serif;
-  font-style: italic;
-  font-weight: 700;
+  font-family: "Bowlby One", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .modal p {
